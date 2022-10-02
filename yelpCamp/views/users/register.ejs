@@ -1,0 +1,40 @@
+<% layout("layouts/boilerplate")%>
+<h1>Register</h1>
+<!-- //This is the class we created for validation 
+    in class, not a default name -->
+<form action="/register" class="needs-validation" novalidate method="post">
+  <!-- Username -->
+  <div class="mb-4">
+    <label class="form-label" for="username">Username:</label>
+    <input
+      class="form-control"
+      type="text"
+      name="username"
+      required
+      id="username"
+    />
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please enter a username.</div>
+  </div>
+  <!-- Email -->
+  <div class="mb-4">
+    <label class="form-label" for="email">Email:</label>
+    <input class="form-control" type="email" name="email" required id="email" />
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please enter an email.</div>
+  </div>
+  <!-- Password -->
+  <div class="mb-4">
+    <label class="form-label" for="password">Password:</label>
+    <input
+      class="form-control"
+      type="password"
+      name="password"
+      required
+      id="password"
+    />
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please enter a password.</div>
+  </div>
+  <button class="btn btn-success">Submit</button>
+</form>
